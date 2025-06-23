@@ -9,41 +9,41 @@ importers:
   .:
     dependencies:
       '@solidjs/router':
-        specifier: ^0.15.0
+        specifier: 0.15.0
         version: 0.15.3(solid-js@1.9.7)
       '@solidjs/start':
-        specifier: ^1.1.0
+        specifier: 1.1.0
         version: 1.1.5(solid-js@1.9.7)(vinxi@0.5.7(@types/node@24.0.3)(db0@0.3.2)(ioredis@5.6.1)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1))(vite@6.3.5(@types/node@24.0.3)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1))
       solid-js:
-        specifier: ^1.9.5
+        specifier: 1.9.5
         version: 1.9.7
       vinxi:
-        specifier: ^0.5.7
+        specifier: 0.5.7
         version: 0.5.7(@types/node@24.0.3)(db0@0.3.2)(ioredis@5.6.1)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1)
     devDependencies:
       '@ianvs/prettier-plugin-sort-imports':
-        specifier: ^4.4.2
-        version: 4.4.2(@vue/compiler-sfc@3.5.17)(prettier@3.5.3)
+        specifier: 4.4.2
+        version: 4.4.2(@vue/compiler-sfc@3.5.17)(prettier@3.6.0)
       '@tailwindcss/vite':
-        specifier: ^4.0.7
+        specifier: 4.0.7
         version: 4.1.10(vite@6.3.5(@types/node@24.0.3)(jiti@2.4.2)(lightningcss@1.30.1)(terser@5.43.1))
       commitizen:
-        specifier: ^4.3.1
+        specifier: 4.3.1
         version: 4.3.1(@types/node@24.0.3)(typescript@5.8.3)
       cz-conventional-changelog:
-        specifier: ^3.3.0
+        specifier: 3.3.0
         version: 3.3.0(@types/node@24.0.3)(typescript@5.8.3)
       prettier:
-        specifier: ^3.5.3
-        version: 3.5.3
+        specifier: 3.6.0
+        version: 3.6.0
       prettier-plugin-css-order:
-        specifier: ^2.1.2
-        version: 2.1.2(postcss@8.5.6)(prettier@3.5.3)
+        specifier: 2.1.2
+        version: 2.1.2(postcss@8.5.6)(prettier@3.6.0)
       prettier-plugin-tailwindcss:
-        specifier: ^0.6.13
-        version: 0.6.13(@ianvs/prettier-plugin-sort-imports@4.4.2(@vue/compiler-sfc@3.5.17)(prettier@3.5.3))(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.5.3))(prettier@3.5.3)
+        specifier: 0.6.13
+        version: 0.6.13(@ianvs/prettier-plugin-sort-imports@4.4.2(@vue/compiler-sfc@3.5.17)(prettier@3.6.0))(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.6.0))(prettier@3.6.0)
       tailwindcss:
-        specifier: ^4.0.7
+        specifier: 4.0.7
         version: 4.1.10
 
 packages:
@@ -2885,8 +2885,8 @@ packages:
       prettier-plugin-svelte:
         optional: true
 
-  prettier@3.5.3:
-    resolution: {integrity: sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw==}
+  prettier@3.6.0:
+    resolution: {integrity: sha512-ujSB9uXHJKzM/2GBuE0hBOUgC77CN3Bnpqa+g80bkv3T3A93wL/xlzDATHhnhkzifz/UE2SNOvmbTz5hSkDlHw==}
     engines: {node: '>=14'}
     hasBin: true
 
@@ -4077,13 +4077,13 @@ snapshots:
 
   '@fastify/busboy@3.1.1': {}
 
-  '@ianvs/prettier-plugin-sort-imports@4.4.2(@vue/compiler-sfc@3.5.17)(prettier@3.5.3)':
+  '@ianvs/prettier-plugin-sort-imports@4.4.2(@vue/compiler-sfc@3.5.17)(prettier@3.6.0)':
     dependencies:
       '@babel/generator': 7.27.5
       '@babel/parser': 7.27.5
       '@babel/traverse': 7.27.4
       '@babel/types': 7.27.6
-      prettier: 3.5.3
+      prettier: 3.6.0
       semver: 7.7.2
     optionalDependencies:
       '@vue/compiler-sfc': 3.5.17
@@ -6687,23 +6687,23 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.5.3):
+  prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.6.0):
     dependencies:
       css-declaration-sorter: 7.2.0(postcss@8.5.6)
       postcss-less: 6.0.0(postcss@8.5.6)
       postcss-scss: 4.0.9(postcss@8.5.6)
-      prettier: 3.5.3
+      prettier: 3.6.0
     transitivePeerDependencies:
       - postcss
 
-  prettier-plugin-tailwindcss@0.6.13(@ianvs/prettier-plugin-sort-imports@4.4.2(@vue/compiler-sfc@3.5.17)(prettier@3.5.3))(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.5.3))(prettier@3.5.3):
+  prettier-plugin-tailwindcss@0.6.13(@ianvs/prettier-plugin-sort-imports@4.4.2(@vue/compiler-sfc@3.5.17)(prettier@3.6.0))(prettier-plugin-css-order@2.1.2(postcss@8.5.6)(prettier@3.6.0))(prettier@3.6.0):
     dependencies:
-      prettier: 3.5.3
+      prettier: 3.6.0
     optionalDependencies:
-      '@ianvs/prettier-plugin-sort-imports': 4.4.2(@vue/compiler-sfc@3.5.17)(prettier@3.5.3)
-      prettier-plugin-css-order: 2.1.2(postcss@8.5.6)(prettier@3.5.3)
+      '@ianvs/prettier-plugin-sort-imports': 4.4.2(@vue/compiler-sfc@3.5.17)(prettier@3.6.0)
+      prettier-plugin-css-order: 2.1.2(postcss@8.5.6)(prettier@3.6.0)
 
-  prettier@3.5.3: {}
+  prettier@3.6.0: {}
 
   pretty-bytes@6.1.1: {}
 
