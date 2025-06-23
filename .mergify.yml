@@ -4,6 +4,9 @@ pull_request_rules:
     conditions:
       - author=dsm23
       - check-success=build
+      - check-success=codeql (actions)
+      - check-success=codeql (javascript)
+      - check-success=codeql (typescript)
       - check-success=dependency-review
       - check-success=format
       - check-success=gitleaks
@@ -15,6 +18,9 @@ pull_request_rules:
     conditions:
       - author=renovate[bot]
       - check-success=build
+      - check-success=codeql (actions)
+      - check-success=codeql (javascript)
+      - check-success=codeql (typescript)
       - check-success=dependency-review
       - check-success=format
       - check-success=gitleaks
@@ -26,6 +32,9 @@ pull_request_rules:
   - name: Automatically merge when GitHub Actions jobs succeed
     conditions:
       - check-success=build
+      - check-success=codeql (actions)
+      - check-success=codeql (javascript)
+      - check-success=codeql (typescript)
       - check-success=dependency-review
       - check-success=format
       - check-success=gitleaks
