@@ -3,7 +3,8 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-@custom-variant dark (&:is(.dark *));
+/* @custom-variant dark (&:is(.dark *)); */
+@custom-variant dark (&:is([data-kb-theme='dark'] *));
 
 @utility container {
   margin-inline: auto;
@@ -45,7 +46,7 @@
   --sidebar-ring: oklch(70.8% 0 0deg);
 }
 
-.dark {
+[data-kb-theme="dark"] {
   --background: oklch(14.5% 0 0deg);
   --foreground: oklch(98.5% 0 0deg);
   --card: oklch(14.5% 0 0deg);
