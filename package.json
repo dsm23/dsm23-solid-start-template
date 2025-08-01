@@ -14,7 +14,7 @@
     "@solidjs/start": "1.1.7",
     "class-variance-authority": "0.7.1",
     "clsx": "2.1.1",
-    "lucide-solid": "0.534.0",
+    "lucide-solid": "0.536.0",
     "solid-js": "1.9.7",
     "tailwind-merge": "3.3.1",
     "vinxi": "0.5.8"
