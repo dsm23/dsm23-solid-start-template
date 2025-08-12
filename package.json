@@ -25,7 +25,7 @@
     "@commitlint/types": "19.8.1",
     "@ianvs/prettier-plugin-sort-imports": "4.6.1",
     "@tailwindcss/vite": "4.1.11",
-    "lefthook": "1.12.2",
+    "lefthook": "1.12.3",
     "prettier": "3.6.2",
     "prettier-plugin-css-order": "2.1.2",
     "prettier-plugin-tailwindcss": "0.6.14",
