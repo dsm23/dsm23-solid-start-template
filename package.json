@@ -23,7 +23,7 @@
     "@commitlint/cli": "19.8.1",
     "@commitlint/config-conventional": "19.8.1",
     "@commitlint/types": "19.8.1",
-    "@ianvs/prettier-plugin-sort-imports": "4.6.3",
+    "@ianvs/prettier-plugin-sort-imports": "4.7.0",
     "@tailwindcss/vite": "4.1.12",
     "lefthook": "1.12.3",
     "prettier": "3.6.2",
