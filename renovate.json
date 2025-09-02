@@ -11,6 +11,7 @@
     ":enableVulnerabilityAlerts",
     ":pinAllExceptPeerDependencies"
   ],
+  "ignoreDeps": ["ghcr.io/dsm23/dsm23-solid-start-template"],
   "packageRules": [
     {
       "extends": ["packages:eslint"],

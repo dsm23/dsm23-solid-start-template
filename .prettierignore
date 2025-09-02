@@ -7,7 +7,8 @@ __tmp__/
 build/
 target/
 compiled/
-coverage
+coverage/
+infra/
 
 lerna.json
 test-timings.json
