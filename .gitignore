@@ -13,6 +13,10 @@ app.config.timestamp_*.js
 # lefthook
 lefthook-local.yml
 
+# coverage
+.vitest-reports/
+coverage/
+
 # dependencies
 /node_modules
 
