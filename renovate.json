@@ -14,6 +14,15 @@
   "customManagers": [
     {
       "customType": "regex",
+      "managerFilePatterns": ["/(^|/)prettier.config.js$/"],
+      "depNameTemplate": "typescript",
+      "datasourceTemplate": "npm",
+      "matchStrings": [
+        "\\/\\/ renovate: datasource=(?<datasource>[a-zA-Z0-9-._]+?) depName=(?<depName>[^\\s]+?)(?: (?:lookupName|packageName)=(?<packageName>[^\\s]+?))?(?: versioning=(?<versioning>[^\\s]+?))?(?: extractVersion=(?<extractVersion>[^\\s]+?))?\\s+importOrderTypeScriptVersion\\s*\\:\\s*[\"']?(?<currentValue>.+?)[\"']"
+      ]
+    },
+    {
+      "customType": "regex",
       "managerFilePatterns": ["/(^|/)unit-testing.yml$/"],
       "depNameTemplate": "dawidd6/action-download-artifact",
       "datasourceTemplate": "github-releases",
