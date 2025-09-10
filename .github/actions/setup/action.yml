@@ -14,7 +14,7 @@ inputs:
   pnpm-install-cache-key:
     description: The cache key for the pnpm install cache
     required: false
-    default: ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
+    default: ${{ runner.os }}-solid-start-${{ hashFiles('**/pnpm-lock.yaml') }}-${{ hashFiles('**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx') }}
 
 runs:
   using: composite
@@ -31,20 +31,20 @@ runs:
         # See here for caching with `yarn` https://github.com/actions/cache/blob/main/examples.md#node---yarn or you can leverage caching with actions/setup-node https://github.com/actions/setup-node
         path: |
           ~/.pnpm-store
-          ${{ github.workspace }}/.next/cache
+          ${{ github.workspace }}/node_modules/.vite
         # Generate a new cache whenever packages or source files change.
         key: ${{ inputs.pnpm-install-cache-key }}
         # If source files changed but packages didn't, rebuild from a prior cache.
         restore-keys: |
-          ${{ runner.os }}-nextjs-${{ hashFiles('**/pnpm-lock.yaml') }}-
-
-    - name: Run pnpm install
-      if: ${{ inputs.pnpm-run-install == 'true' }}
-      shell: bash
-      run: pnpm install --frozen-lockfile
+          ${{ runner.os }}-solid-start-${{ hashFiles('**/pnpm-lock.yaml') }}-
 
     - name: Setup Node.js
       uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5.0.0
       with:
         node-version-file: ".nvmrc"
         cache: "pnpm"
+
+    - name: Run pnpm install
+      if: ${{ inputs.pnpm-run-install == 'true' }}
+      shell: bash
+      run: pnpm install --frozen-lockfile
