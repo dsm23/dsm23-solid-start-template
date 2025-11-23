@@ -38,9 +38,9 @@
     "@testing-library/jest-dom": "6.9.1",
     "@testing-library/user-event": "14.6.1",
     "@total-typescript/ts-reset": "0.6.1",
-    "@vitest/browser": "3.2.4",
-    "@vitest/coverage-v8": "3.2.4",
-    "jsdom": "27.1.0",
+    "@vitest/browser-playwright": "4.0.13",
+    "@vitest/coverage-v8": "4.0.13",
+    "jsdom": "27.2.0",
     "lefthook": "2.0.2",
     "prettier": "3.6.2",
     "prettier-plugin-css-order": "2.1.2",
@@ -52,7 +52,7 @@
     "typed-query-selector": "2.12.0",
     "vite-plugin-solid": "2.11.10",
     "vite-tsconfig-paths": "5.1.4",
-    "vitest": "3.2.4"
+    "vitest": "4.0.13"
   },
   "engines": {
     "node": ">=22"
