@@ -55,6 +55,15 @@
         "@playwright/test",
         "mcr.microsoft.com/playwright"
       ]
+    },
+    {
+      "groupName": "storybook monorepo",
+      "matchPackageNames": [
+        "@storybook/**",
+        "eslint-plugin-storybook",
+        "storybook",
+        "storybook-solidjs-vite"
+      ]
     }
   ],
   "patch": {
