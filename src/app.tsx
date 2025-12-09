@@ -1,9 +1,7 @@
 import { Suspense } from "solid-js";
+import { MetaProvider } from "@solidjs/meta";
 import { Router } from "@solidjs/router";
 import { FileRoutes } from "@solidjs/start/router";
-
-import "./app.css";
-
 import { isServer } from "solid-js/web";
 import {
   ColorModeProvider,
@@ -12,6 +10,8 @@ import {
 } from "@kobalte/core";
 import { getCookie } from "vinxi/http";
 import { ThemeSwitcher } from "./components/theme-switcher";
+
+import "./app.css";
 
 function getServerCookies() {
   "use server";
@@ -27,7 +27,7 @@ export default function App() {
   return (
     <Router
       root={(props) => (
-        <>
+        <MetaProvider>
           <ColorModeScript storageType={storageManager.type} />
           <ColorModeProvider
             initialColorMode="system"
@@ -38,7 +38,7 @@ export default function App() {
               <ThemeSwitcher />
             </footer>
           </ColorModeProvider>
-        </>
+        </MetaProvider>
       )}
     >
       <FileRoutes />

@@ -1,3 +1,4 @@
+import { Title } from "@solidjs/meta";
 import { Button } from "~/components/ui/button";
 
 const LP_GRID_ITEMS = [
@@ -436,57 +437,60 @@ const LP_GRID_ITEMS = [
 
 export default function Home() {
   return (
-    <main>
-      <h1 class="sr-only">Delete this</h1>
+    <>
+      <Title>SolidStart Enterprise Boilerplate</Title>
+      <main>
+        <h1 class="sr-only">Delete this</h1>
 
-      <section class="bg-white dark:bg-gray-900">
-        <div class="mx-auto grid max-w-(--breakpoint-xl) px-4 py-8 text-center lg:py-16">
-          <div class="mx-auto place-self-center">
-            <h1 class="mb-4 max-w-2xl text-4xl leading-none font-extrabold tracking-tight md:text-5xl xl:text-6xl dark:text-white">
-              SolidStart Enterprise Boilerplate
-            </h1>
-            <p class="mb-6 max-w-2xl font-light text-gray-500 md:text-lg lg:mb-8 lg:text-xl dark:text-gray-400">
-              Jumpstart your enterprise project with our feature-packed,
-              high-performance SolidStart boilerplate! Experience rapid UI
-              development, AI-powered code reviews, and an extensive suite of
-              tools for a smooth and enjoyable development process.
-            </p>
-            <Button
-              as="a"
-              href="https://github.com/dsm23/dsm23-solid-start-template"
-              class="mr-3"
-            >
-              Get started
-            </Button>
-            <Button
-              variant="outline"
-              as="a"
-              href="https://vercel.com/new/git/external?repository-url=https://github.com/dsm23/dsm23-solid-start-template/"
-            >
-              Deploy Now
-            </Button>
+        <section class="bg-white dark:bg-gray-900">
+          <div class="mx-auto grid max-w-(--breakpoint-xl) px-4 py-8 text-center lg:py-16">
+            <div class="mx-auto place-self-center">
+              <h1 class="mb-4 max-w-2xl text-4xl leading-none font-extrabold tracking-tight md:text-5xl xl:text-6xl dark:text-white">
+                SolidStart Enterprise Boilerplate
+              </h1>
+              <p class="mb-6 max-w-2xl font-light text-gray-500 md:text-lg lg:mb-8 lg:text-xl dark:text-gray-400">
+                Jumpstart your enterprise project with our feature-packed,
+                high-performance SolidStart boilerplate! Experience rapid UI
+                development, AI-powered code reviews, and an extensive suite of
+                tools for a smooth and enjoyable development process.
+              </p>
+              <Button
+                as="a"
+                href="https://github.com/dsm23/dsm23-solid-start-template"
+                class="mr-3"
+              >
+                Get started
+              </Button>
+              <Button
+                variant="outline"
+                as="a"
+                href="https://vercel.com/new/git/external?repository-url=https://github.com/dsm23/dsm23-solid-start-template/"
+              >
+                Deploy Now
+              </Button>
+            </div>
           </div>
-        </div>
-      </section>
-      <section class="bg-white dark:bg-gray-900">
-        <div class="mx-auto max-w-(--breakpoint-xl) px-4 py-8 sm:py-16 lg:px-6">
-          <div class="justify-center space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0 lg:grid-cols-3">
-            {LP_GRID_ITEMS.map((singleItem) => (
-              <div class="flex flex-col items-center justify-center text-center">
-                <div class="mb-4 flex size-10 items-center justify-center rounded-full p-1.5 text-blue-700 lg:size-12">
-                  {singleItem.icon}
+        </section>
+        <section class="bg-white dark:bg-gray-900">
+          <div class="mx-auto max-w-(--breakpoint-xl) px-4 py-8 sm:py-16 lg:px-6">
+            <div class="justify-center space-y-8 md:grid md:grid-cols-2 md:gap-12 md:space-y-0 lg:grid-cols-3">
+              {LP_GRID_ITEMS.map((singleItem) => (
+                <div class="flex flex-col items-center justify-center text-center">
+                  <div class="mb-4 flex size-10 items-center justify-center rounded-full p-1.5 text-blue-700 lg:size-12">
+                    {singleItem.icon}
+                  </div>
+                  <h2 class="mb-2 text-xl font-bold dark:text-white">
+                    {singleItem.title}
+                  </h2>
+                  <p class="text-gray-500 dark:text-gray-400">
+                    {singleItem.description}
+                  </p>
                 </div>
-                <h2 class="mb-2 text-xl font-bold dark:text-white">
-                  {singleItem.title}
-                </h2>
-                <p class="text-gray-500 dark:text-gray-400">
-                  {singleItem.description}
-                </p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+      </main>
+    </>
   );
 }
