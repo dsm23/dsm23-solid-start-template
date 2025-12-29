@@ -44,7 +44,7 @@
     "@vitest/browser-playwright": "4.0.16",
     "@vitest/coverage-v8": "4.0.16",
     "dotenv": "17.2.3",
-    "jsdom": "27.3.0",
+    "jsdom": "27.4.0",
     "lefthook": "2.0.13",
     "prettier": "3.7.4",
     "prettier-plugin-css-order": "2.1.2",
