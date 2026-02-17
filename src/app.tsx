@@ -2,7 +2,7 @@ import { Suspense } from "solid-js";
 import { MetaProvider } from "@solidjs/meta";
 import { Router } from "@solidjs/router";
 import { FileRoutes } from "@solidjs/start/router";
-import { isServer } from "solid-js/web";
+import { getRequestEvent, isServer } from "solid-js/web";
 import {
   ColorModeProvider,
   ColorModeScript,
@@ -24,11 +24,16 @@ export default function App() {
     isServer ? getServerCookies() : document.cookie,
   );
 
+  const event = getRequestEvent();
+
   return (
     <Router
       root={(props) => (
         <MetaProvider>
-          <ColorModeScript storageType={storageManager.type} />
+          <ColorModeScript
+            storageType={storageManager.type}
+            nonce={event?.locals.nonce}
+          />
           <ColorModeProvider
             initialColorMode="system"
             storageManager={storageManager}
