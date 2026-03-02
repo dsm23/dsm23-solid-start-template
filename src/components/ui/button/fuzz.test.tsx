@@ -1,7 +1,7 @@
-import { render, screen } from "@solidjs/testing-library";
+import { describe, expect } from "vitest";
 import crypto from "node:crypto";
 import { fc, it } from "@fast-check/vitest";
-import { describe, expect } from "vitest";
+import { render, screen } from "@solidjs/testing-library";
 import { Button } from ".";
 
 describe("component", () => {
