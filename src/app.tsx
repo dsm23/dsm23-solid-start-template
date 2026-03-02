@@ -1,13 +1,13 @@
 import { Suspense } from "solid-js";
-import { MetaProvider } from "@solidjs/meta";
-import { Router } from "@solidjs/router";
-import { FileRoutes } from "@solidjs/start/router";
-import { getRequestEvent, isServer } from "solid-js/web";
 import {
   ColorModeProvider,
   ColorModeScript,
   cookieStorageManagerSSR,
 } from "@kobalte/core";
+import { MetaProvider } from "@solidjs/meta";
+import { Router } from "@solidjs/router";
+import { FileRoutes } from "@solidjs/start/router";
+import { getRequestEvent, isServer } from "solid-js/web";
 import { getCookie } from "vinxi/http";
 import { ThemeSwitcher } from "./components/theme-switcher";
 

@@ -1,5 +1,5 @@
-import { fn } from "storybook/test";
 import type { Meta, StoryObj } from "storybook-solidjs-vite";
+import { fn } from "storybook/test";
 import { Button } from ".";
 
 const meta = {

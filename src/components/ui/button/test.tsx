@@ -1,5 +1,5 @@
-import { render, screen } from "@solidjs/testing-library";
 import { describe, expect, it } from "vitest";
+import { render, screen } from "@solidjs/testing-library";
 import { Button } from ".";
 
 describe("component", () => {
