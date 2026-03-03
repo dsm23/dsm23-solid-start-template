@@ -39,11 +39,11 @@ const ThemeSwitcher = () => {
       <DropdownMenuTrigger as={Button} variant="ghost" size="sm">
         <span class="sr-only">Theme switcher</span>
         {theme() === "light" ? (
-          <Sun class="text-muted-foreground size-4" />
+          <Sun class="size-4 text-muted-foreground" />
         ) : theme() === "dark" ? (
-          <Moon class="text-muted-foreground size-4" />
+          <Moon class="size-4 text-muted-foreground" />
         ) : (
-          <Laptop class="text-muted-foreground size-4" />
+          <Laptop class="size-4 text-muted-foreground" />
         )}
       </DropdownMenuTrigger>
       <DropdownMenuContent class="w-fit">
@@ -56,13 +56,13 @@ const ThemeSwitcher = () => {
           }}
         >
           <DropdownMenuRadioItem class="flex gap-2" value="light">
-            <Sun class="text-muted-foreground size-4" /> <span>Light</span>
+            <Sun class="size-4 text-muted-foreground" /> <span>Light</span>
           </DropdownMenuRadioItem>
           <DropdownMenuRadioItem class="flex gap-2" value="dark">
-            <Moon class="text-muted-foreground size-4" /> <span>Dark</span>
+            <Moon class="size-4 text-muted-foreground" /> <span>Dark</span>
           </DropdownMenuRadioItem>
           <DropdownMenuRadioItem class="flex gap-2" value="system">
-            <Laptop class="text-muted-foreground size-4" /> <span>System</span>
+            <Laptop class="size-4 text-muted-foreground" /> <span>System</span>
           </DropdownMenuRadioItem>
         </DropdownMenuRadioGroup>
       </DropdownMenuContent>
