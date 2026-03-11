@@ -28,7 +28,7 @@
     "@commitlint/cli": "20.4.3",
     "@commitlint/config-conventional": "20.4.3",
     "@commitlint/types": "20.4.3",
-    "@fast-check/vitest": "0.2.4",
+    "@fast-check/vitest": "0.3.0",
     "@playwright/test": "1.58.2",
     "@solidjs/meta": "0.29.4",
     "@solidjs/testing-library": "0.8.10",
