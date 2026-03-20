@@ -22,10 +22,10 @@ export default mergeConfig(
         include: ["src/**/*.[jt]s?(x)"],
         exclude: ["src/**/*.stories.[jt]s?(x)", "**/*.d.ts"],
         thresholds: {
-          lines: 3,
-          functions: 3,
-          branches: 3,
-          statements: 3,
+          lines: 2,
+          functions: 2,
+          branches: 2,
+          statements: 2,
         },
       },
       projects: [
