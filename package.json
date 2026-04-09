@@ -44,7 +44,7 @@
     "@vitest/coverage-v8": "4.1.2",
     "dotenv": "17.4.1",
     "jsdom": "29.0.1",
-    "lefthook": "2.1.4",
+    "lefthook": "2.1.5",
     "oxfmt": "0.43.0",
     "storybook": "10.3.4",
     "storybook-solidjs-vite": "10.0.12",
