@@ -52,8 +52,8 @@ importers:
         specifier: 20.5.0
         version: 20.5.0
       '@fast-check/vitest':
-        specifier: 0.4.0
-        version: 0.4.0(vitest@4.1.5)
+        specifier: 0.4.1
+        version: 0.4.1(vitest@4.1.5)
       '@playwright/test':
         specifier: 1.59.1
         version: 1.59.1
@@ -720,8 +720,8 @@ packages:
       '@noble/hashes':
         optional: true
 
-  '@fast-check/vitest@0.4.0':
-    resolution: {integrity: sha512-uv/x7EyT9/fRM0oxNP2myhxHtB1pZyHYMMLVoBGFff57cyINSGftPf3ZhqNzww7ajn/ufr/Bx6OPXX/TUFezmQ==}
+  '@fast-check/vitest@0.4.1':
+    resolution: {integrity: sha512-OX6TecB+ZzRfPc49jcPChcV1cf5aDu77CdDU8liecWVam7eD7mPvJNP50b9bBSTxVoGN5wzxrX9PIcCnqgC8bg==}
     peerDependencies:
       vitest: ^4.1.0
 
@@ -4727,7 +4727,7 @@ snapshots:
 
   '@exodus/bytes@1.15.0': {}
 
-  '@fast-check/vitest@0.4.0(vitest@4.1.5)':
+  '@fast-check/vitest@0.4.1(vitest@4.1.5)':
     dependencies:
       fast-check: 4.7.0
       vitest: 4.1.5(@types/node@24.12.2)(@vitest/browser-playwright@4.1.5)(@vitest/coverage-v8@4.1.5)(jsdom@29.1.0)(vite@6.4.2(@types/node@24.12.2)(jiti@2.6.1)(lightningcss@1.32.0)(terser@5.46.2))
