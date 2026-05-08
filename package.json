@@ -45,7 +45,7 @@
     "dotenv": "17.4.2",
     "jsdom": "29.1.1",
     "lefthook": "2.1.6",
-    "oxfmt": "0.47.0",
+    "oxfmt": "0.48.0",
     "storybook": "10.3.6",
     "storybook-solidjs-vite": "10.0.12",
     "tailwindcss": "4.2.4",
