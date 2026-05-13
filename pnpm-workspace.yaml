@@ -1,7 +1,9 @@
-blockExoticSubdeps: true
+allowBuilds:
+  "@parcel/watcher": false
+  esbuild: false
+  lefthook: true
 
-onlyBuiltDependencies:
-  - lefthook
+blockExoticSubdeps: true
 
 savePrefix: ""
 
