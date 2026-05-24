@@ -51,9 +51,9 @@ ENV NODE_ENV=production
 
 # Automatically leverage output traces to reduce image size
 # https://nextjs.org/docs/advanced-features/output-file-tracing
-COPY --from=prod-deps /app/node_modules ./node_modules
-COPY --from=builder /app/.output ./.output
-COPY --from=builder /app/.vinxi ./vinxi
+COPY --from=prod-deps /app/node_modules ./node_modules/
+COPY --from=builder /app/.output ./.output/
+COPY --from=builder /app/.vinxi ./vinxi/
 
 EXPOSE 3000
 
@@ -62,4 +62,4 @@ ENV PORT=3000
 # server.js is created by next build from the standalone output
 # https://nextjs.org/docs/pages/api-reference/next-config-js/output
 ENV HOSTNAME="0.0.0.0"
-CMD ["./node_modules/.bin/vinxi", "start"]
+CMD ["node", "./node_modules/vinxi/bin/cli.mjs", "start"]
