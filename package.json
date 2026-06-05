@@ -40,12 +40,12 @@
     "@testing-library/user-event": "14.6.1",
     "@total-typescript/ts-reset": "0.6.1",
     "@types/node": "24.12.4",
-    "@vitest/browser-playwright": "4.1.7",
-    "@vitest/coverage-v8": "4.1.7",
+    "@vitest/browser-playwright": "4.1.8",
+    "@vitest/coverage-v8": "4.1.8",
     "dotenv": "17.4.2",
     "jsdom": "29.1.1",
     "lefthook": "2.1.9",
-    "oxfmt": "0.52.0",
+    "oxfmt": "0.53.0",
     "storybook": "10.4.1",
     "storybook-solidjs-vite": "10.1.1",
     "tailwindcss": "4.3.0",
@@ -53,7 +53,7 @@
     "typed-query-selector": "2.12.2",
     "vite-plugin-solid": "2.11.12",
     "vite-tsconfig-paths": "6.1.1",
-    "vitest": "4.1.7"
+    "vitest": "4.1.8"
   },
   "engines": {
     "node": ">=26.0.0"
